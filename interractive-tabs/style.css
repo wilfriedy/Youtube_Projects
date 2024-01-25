@@ -34,10 +34,11 @@ body {
   display: flex;
   align-items: center;
   height: 50px;
+  justify-content: space-between;
 }
 
 .tabs-container .tab {
-  width: 25%;
+  width: 24%;
   text-align: center;
   height: 100%;
   display: flex;
@@ -45,6 +46,7 @@ body {
   justify-content: center;
   cursor: pointer;
   z-index: 20;
+  /* border: 1px solid; */
 }
 
 .tab-indicator {
@@ -55,7 +57,7 @@ body {
 }
 
 .tab-indicator .inner {
-  width: 25%;
+  width: 24%;
   height: 4px;
   background-color: yellow;
   position: absolute;
