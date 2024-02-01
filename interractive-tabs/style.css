@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;1,100&display=swap");
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Kanit", sans-serif;
+}
+
+body {
+  background-color: #031032;
+}
+
+.header {
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: end;
+  padding: 50px 100px;
+  width: 900px;
+  margin: 70px auto;
+  color: aliceblue;
+}
+
+.tabs-container,
+.tab-indicator-container {
+  width: 50%;
+  margin: auto;
+}
+
+.tabs-container {
+  display: flex;
+  align-items: center;
+  height: 50px;
+  justify-content: space-between;
+}
+
+.tabs-container .tab {
+  width: 24%;
+  text-align: center;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 20;
+  color: antiquewhite;
+}
+
+.tab-indicator-container {
+  height: 50px;
+  position: relative;
+  margin-top: -50px;
+}
+
+.tab-indicator-container .tab-indicator {
+  width: 24%;
+  height: 4px;
+  background-color: yellow;
+  position: absolute;
+  left: 0%;
+  bottom: 0;
+  transition: left 300ms ease-in-out;
+}
+
+.tab.active {
+  color: yellow;
+  font-weight: bolder;
+}
+
+.tab-body {
+  width: 50%;
+  margin: auto;
+  padding: 50px 20px;
+  color: white;
+}
